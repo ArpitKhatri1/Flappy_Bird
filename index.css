@@ -1,0 +1,97 @@
+#bird{
+    width: 50px;
+    height: 35px;
+    background-color: rgb(247, 247, 29);
+    position: absolute;
+    transition: ease;
+    background-image: url(./public/bird.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+  
+    border-radius: 50%;
+   
+}
+body{
+    margin: 0;
+    background-color: rgb(15, 169, 240);
+    overflow: hidden;
+}
+
+.blocktop{
+    width: 110px;
+    margin-left: 70px;
+    background-color: rgb(4, 255, 13);
+    position: absolute;
+    background-image: url(./public/upper.png);
+    background-repeat: no-repeat;
+    background-size: 110px auto;
+    
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+
+
+#topdiv{
+    width: auto;
+    height: auto;
+    
+}
+
+
+.blockbottom{
+    width: 110px;
+    height: 500px;
+    margin-left: 70px;
+    background-color: rgb(41, 255, 8);
+    position: absolute;
+    top: 200px;
+    background-image: url(./public/lower.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+
+.score{
+    margin: 0px;
+    z-index: 1;
+    position:absolute;
+    padding: 4px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    border:none
+
+}
+
+.over{
+    position: absolute;
+    left: 485px;
+    margin: 4px;
+    font-size: 70px;
+    visibility: hidden;
+}
+
+.againbtn{
+    padding: 10px;
+    position: absolute;
+    left: 600px;
+    top: 170px;
+    border: none;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.againbtn:hover{
+    background-color: yellow;
+    cursor: pointer;
+    
+}
+
+.finalscore{
+    position: absolute;
+    left: 520px;
+   font-size: x-large;
+    top: 100px;
+    visibility: hidden;
+}
