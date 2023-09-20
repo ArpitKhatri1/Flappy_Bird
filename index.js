@@ -132,7 +132,7 @@ function mainGameRuntime() {
   });
 
   function updateScore() {
-    document.getElementById("score").innerHTML = `Score is : - ${score}`;
+    document.getElementById("score").textContent = `Score is : - ${score}`;
   }
 
   function checkStatus() {
@@ -161,7 +161,7 @@ function mainGameRuntime() {
           clearInterval(fallingAnimation);
           finalScore = score;
 
-          document.getElementsByClassName("container")[0].innerHTML = "";
+          document.getElementsByClassName("container")[0].textContent = "";
           gameOver();
         }
       }
@@ -186,7 +186,7 @@ function mainGameRuntime() {
           clearInterval(continousDivGeneration);
           clearInterval(fallingAnimation);
           finalScore = score;
-          document.getElementsByClassName("container")[0].innerHTML = "";
+          document.getElementsByClassName("container")[0].textContent = "";
           gameOver();
         }
       }
@@ -200,7 +200,7 @@ function gameOver() {
   document.getElementsByClassName("over")[0].style.visibility = "visible";
   document.getElementsByClassName(
     "finalscore"
-  )[0].innerHTML = `Your final score is ${finalScore}`;
+  )[0].textContent = `Your final score is ${finalScore}`;
   document.getElementsByClassName("finalscore")[0].style.visibility = "visible";
 
   let btn = document.getElementsByClassName("againbtn")[0];
